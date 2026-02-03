@@ -1,6 +1,6 @@
-# Rampon Basketball Project Web
+# Keio Basketball Tech Web
 
-大学バスケットボールチーム Rampon Basketball Project の GitHub Pages 用静的サイトです。団体紹介・スケジュール・試合結果・ニュース・FAQ・問い合わせページを提供します。
+大学バスケットボールチーム Keio Basketball Tech の GitHub Pages 用静的サイトです。団体紹介・スケジュール・試合結果・ニュース・FAQ・問い合わせページを提供します。
 
 ## 構成
 - `index.html` … Home（ニュース/試合抜粋、SNS）
