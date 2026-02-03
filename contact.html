@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Rampon Basketball Project</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="contact">
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="brand" href="index.html">Rampon Basketball</a>
+      <button class="nav-toggle" aria-label="メニューを開く">MENU</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="wrapper">
+      <section class="section">
+        <div class="section-header">
+          <p class="section-eyebrow">CONTACT</p>
+          <h1>お問い合わせ</h1>
+          <p>見学・入部希望、スポンサー/コラボ、取材などはこちらからご連絡ください。返信まで2-3日いただく場合があります。</p>
+        </div>
+        <div class="panel contact-card">
+          <p>代表メール：<a href="mailto:info@rampon-basketball.jp">info@rampon-basketball.jp</a></p>
+          <p>フォーム：<a href="https://forms.gle/example" target="_blank" rel="noopener">Google Form</a></p>
+          <div>
+            <h3>SNS</h3>
+            <div class="sns-links">
+              <a href="https://x.com/rampon_basketball" target="_blank" rel="noopener">X</a>
+              <a href="https://instagram.com/rampon_basketball" target="_blank" rel="noopener">Instagram</a>
+              <a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a>
+            </div>
+          </div>
+          <p>所在地：東京都港区芝公園 4-2-8（運営事務局）</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrapper">
+      <p>© <span id="year"></span> Rampon Basketball Project</p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

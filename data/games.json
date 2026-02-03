@@ -1,0 +1,69 @@
+[
+  {
+    "date": "2025-01-12",
+    "competition": "Tokyo Metro League",
+    "round": "Regular Week 5",
+    "opponent": "Tokyo Edge",
+    "score_for": 82,
+    "score_against": 75,
+    "venue": "Toyosu Arena",
+    "slug": "2025-01-12-tokyo-edge",
+    "recap": "4Qで10-0のランを作り逆転勝利。オフェンスリバウンドが勝負を決めた。",
+    "media": {
+      "highlight_url": "https://youtu.be/sample-highlight1",
+      "photos_url": "https://example.com/gallery/tokyo-edge"
+    }
+  },
+  {
+    "date": "2025-01-05",
+    "competition": "Shibuya Cup",
+    "round": "Quarterfinal",
+    "opponent": "Shibuya Rookies",
+    "score_for": 68,
+    "score_against": 72,
+    "venue": "Shibuya Sports Center",
+    "slug": "2025-01-05-shibuya",
+    "recap": "終盤のターンオーバーで惜敗も、守備で得た収穫を次戦に活かす。",
+    "media": {
+      "highlight_url": "https://youtu.be/sample-highlight2"
+    }
+  },
+  {
+    "date": "2024-12-18",
+    "competition": "Kanto Winter Challenge",
+    "round": "Semifinal",
+    "opponent": "Chiba Bay Students",
+    "score_for": 75,
+    "score_against": 63,
+    "venue": "Kashiwa Gym",
+    "slug": "2024-12-18-chiba",
+    "recap": "3Pが高確率で決まり、セカンドユニットも躍動。",
+    "media": {
+      "photos_url": "https://example.com/gallery/chiba"
+    }
+  },
+  {
+    "date": "2024-11-30",
+    "competition": "Yokohama Friendly",
+    "round": "Exhibition",
+    "opponent": "Yokohama Rise",
+    "score_for": 90,
+    "score_against": 74,
+    "venue": "Yokohama Arena Annex",
+    "slug": "2024-11-30-yokohama",
+    "recap": "速攻がさえわたり、全員得点で快勝。",
+    "media": {}
+  },
+  {
+    "date": "2024-10-15",
+    "competition": "Autumn University Cup",
+    "round": "Group Stage",
+    "opponent": "Saitama United",
+    "score_for": 71,
+    "score_against": 69,
+    "venue": "Saitama Civic Gym",
+    "slug": "2024-10-15-saitama",
+    "recap": "残り30秒で決勝点を決め、接戦をものにした。",
+    "media": {}
+  }
+]

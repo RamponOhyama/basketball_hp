@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games | Rampon Basketball Project</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="games">
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="brand" href="index.html">Rampon Basketball</a>
+      <button class="nav-toggle" aria-label="メニューを開く">MENU</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="wrapper">
+      <section class="section">
+        <div class="section-header">
+          <p class="section-eyebrow">GAMES</p>
+          <h1>試合一覧</h1>
+          <p>年度別に試合結果をまとめています。各試合の詳細ページではハイライトや振り返りを公開します。</p>
+        </div>
+        <div id="games-table"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrapper">
+      <p>© <span id="year"></span> Rampon Basketball Project</p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

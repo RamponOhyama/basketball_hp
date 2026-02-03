@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team | Rampon Basketball Project</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="team">
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="brand" href="index.html">Rampon Basketball</a>
+      <button class="nav-toggle" aria-label="メニューを開く">MENU</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="wrapper">
+      <section class="section">
+        <div class="section-header">
+          <p class="section-eyebrow">TEAM</p>
+          <h1>団体紹介</h1>
+          <p>Rampon Basketball Project は「走れる知性」をコンセプトにした大学発クラブ。学生の主体性と地域連携を両立する組織運営を実践しています。</p>
+        </div>
+        <div class="grid-two">
+          <article class="panel">
+            <h3>PHILOSOPHY</h3>
+            <p>攻守のトランジションで優位を作るハイテンポバスケを標榜し、映像・データを元にした意思決定を大切にしています。</p>
+          </article>
+          <article class="panel">
+            <h3>PROGRAM</h3>
+            <p>週2回のチーム練習に加え、個別スキルワーク、コンディションチェック、メンタリングを組み合わせた独自の育成プログラム。</p>
+          </article>
+          <article class="panel">
+            <h3>STAFF</h3>
+            <p>学生スタッフがアナリティクス・広報・イベント運営を担当。社会人アドバイザーによるメンタリングも受けられます。</p>
+          </article>
+          <article class="panel">
+            <h3>COMMUNITY</h3>
+            <p>港区・渋谷区を中心とした地域連携イベントを定期開催。中高生向けクリニックや社会人勉強会も共催しています。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <p class="section-eyebrow">JOIN</p>
+          <h2>入部/見学について</h2>
+        </div>
+        <div class="panel">
+          <p>・大学生（学年・大学不問）、社会人OBOGいずれも応募可<br>・バスケットボール経験3年以上推奨。サポートスタッフは未経験可<br>・まずは <a href="contact.html">Contact</a> または <a href="faq.html">FAQ</a> をご確認のうえご連絡ください。</p>
+          <p>次回トライアウトや練習会の情報は News / Schedule ページでお知らせします。</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrapper">
+      <p>© <span id="year"></span> Rampon Basketball Project</p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

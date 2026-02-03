@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ | Rampon Basketball Project</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="faq">
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="brand" href="index.html">Rampon Basketball</a>
+      <button class="nav-toggle" aria-label="メニューを開く">MENU</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="wrapper">
+      <section class="section">
+        <div class="section-header">
+          <p class="section-eyebrow">FAQ</p>
+          <h1>よくある質問</h1>
+          <p>ボタンをクリックして回答を表示してください。</p>
+        </div>
+        <div class="panel">
+          <div class="faq-item">
+            <button class="faq-question">初心者でも参加できますか？ <span>+</span></button>
+            <div class="faq-answer">
+              <p>プレーヤーは競技経験者を対象としていますが、マネージャー・データ班・広報などサポートスタッフは未経験歓迎です。</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">学業や他サークルと両立できますか？ <span>+</span></button>
+            <div class="faq-answer">
+              <p>週2回の練習と週末の試合が基本で、テスト期間はオフ設定。他団体との兼部も事前共有のうえ調整しています。</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">トライアウトはいつ行われますか？ <span>+</span></button>
+            <div class="faq-answer">
+              <p>春（3月）と秋（9月）に実施予定です。エントリー情報は News ページとSNSで告知します。</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">スポンサーやコラボ相談はどこから？ <span>+</span></button>
+            <div class="faq-answer">
+              <p><a href="contact.html">Contact</a> ページのメールアドレスまでご連絡ください。資料をお送りします。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrapper">
+      <p>© <span id="year"></span> Rampon Basketball Project</p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

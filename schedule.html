@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule | Rampon Basketball Project</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="schedule">
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="brand" href="index.html">Rampon Basketball</a>
+      <button class="nav-toggle" aria-label="メニューを開く">MENU</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="wrapper">
+      <section class="section">
+        <div class="section-header">
+          <p class="section-eyebrow">SCHEDULE</p>
+          <h1>週間スケジュール</h1>
+          <p>最新の予定変更は <a href="news.html">News</a> でアナウンスします。天候や施設状況によって直前変更になる場合があります。</p>
+        </div>
+        <div class="table-scroll">
+          <table class="schedule-table">
+            <caption>通常週（2025年春）</caption>
+            <thead>
+              <tr>
+                <th>曜日</th>
+                <th>時間</th>
+                <th>内容</th>
+                <th>場所</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>火</td>
+                <td>19:00-21:30</td>
+                <td>チーム練習（戦術）</td>
+                <td>渋谷スポーツセンター</td>
+              </tr>
+              <tr>
+                <td>木</td>
+                <td>20:00-22:00</td>
+                <td>スキルワーク・シューティング</td>
+                <td>港区スポーツセンター</td>
+              </tr>
+              <tr>
+                <td>土</td>
+                <td>9:30-12:30</td>
+                <td>チーム練習（ゲーム＋映像）</td>
+                <td>品川区総合体育館</td>
+              </tr>
+              <tr>
+                <td>日</td>
+                <td>試合/地域イベント</td>
+                <td>リーグ戦/クリニック等</td>
+                <td>各会場</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section grid-two">
+        <article class="panel location-card">
+          <h2>主な練習場所</h2>
+          <p>港区・渋谷区の公共体育館をメインに、大学体育館やパートナー企業施設も利用しています。</p>
+          <ul>
+            <li>港区スポーツセンター（地下鉄赤羽橋駅から徒歩5分）</li>
+            <li>渋谷スポーツセンター（代々木公園駅徒歩8分）</li>
+            <li>品川区総合体育館</li>
+          </ul>
+          <p><a href="https://maps.app.goo.gl/2R18f6aD3example" target="_blank" rel="noopener">Google Mapsで確認する</a></p>
+        </article>
+        <article class="panel">
+          <h2>変更連絡</h2>
+          <p>施設の抽選状況や大会日程次第で変更が発生します。<br>・メンバーは Slack / メールリングで通知<br>・外部の方は <a href="news.html">News</a> と <a href="contact.html">Contact</a> からご確認ください。</p>
+          <p>見学は事前連絡必須です。参加希望日は第3候補までご連絡ください。</p>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrapper">
+      <p>© <span id="year"></span> Rampon Basketball Project</p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
