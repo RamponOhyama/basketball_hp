@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rampon Basketball Project</title>
+  <meta name="description" content="Rampon Basketball Project の公式ホームページ。最新ニュース、ゲームスケジュール、メンバー紹介などを掲載。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Rampon Basketball Project</p>
+      <h1>「走りきる」を合言葉に、<br>新しいバスケ体験を。</h1>
+      <p class="hero__lead">学生・社会人混合で活動するクラブチーム。プレーだけでなく、分析・広報・地域連携まで一体となって取り組みます。</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#schedule">次のゲームを見る</a>
+        <a class="btn btn--ghost" href="#contact">メンバー応募</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="news">
+      <div class="section__header">
+        <p class="section__eyebrow">NEWS</p>
+        <h2>最新ニュース</h2>
+        <p>活動レポートやイベント情報をお届けします。</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <p class="card__date">2025.01.20</p>
+          <h3>春季トライアウト開催決定</h3>
+          <p>3 月に新メンバー向けのトライアウトを実施します。ポジション不問、サポートスタッフも募集中です。</p>
+        </article>
+        <article class="card">
+          <p class="card__date">2025.01.05</p>
+          <h3>テック分析班が始動</h3>
+          <p>データ分析を担当する学生チームが立ち上がりました。ゲームごとのスタッツ可視化を行い戦術に活かします。</p>
+        </article>
+        <article class="card">
+          <p class="card__date">2024.12.10</p>
+          <h3>地域クリニックをサポート</h3>
+          <p>港区ミニバス連盟と協力し、初心者向けスキルクリニックを開催。参加者 40 名がフロアを駆け回りました。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--accent" id="schedule">
+      <div class="section__header">
+        <p class="section__eyebrow">SCHEDULE</p>
+        <h2>ゲーム／イベント予定</h2>
+      </div>
+      <div class="schedule">
+        <div class="schedule__item">
+          <p class="schedule__date">2.09 SUN</p>
+          <div>
+            <h3>vs TOKYO EDGE</h3>
+            <p>豊洲アリーナ｜Tip-off 18:30</p>
+          </div>
+          <span class="badge badge--open">一般公開</span>
+        </div>
+        <div class="schedule__item">
+          <p class="schedule__date">2.16 SUN</p>
+          <div>
+            <h3>COMMUNITY PRACTICE</h3>
+            <p>渋谷スポーツセンター｜10:00-13:00</p>
+          </div>
+          <span class="badge">メンバー限定</span>
+        </div>
+        <div class="schedule__item">
+          <p class="schedule__date">3.02 SUN</p>
+          <div>
+            <h3>SPRING TRYOUT</h3>
+            <p>品川区総合体育館｜13:00-17:00</p>
+          </div>
+          <span class="badge badge--open">参加者募集</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="team">
+      <div class="section__header">
+        <p class="section__eyebrow">TEAM</p>
+        <h2>チームの特徴</h2>
+      </div>
+      <div class="grid">
+        <div class="grid__item">
+          <h3>PHILOSOPHY</h3>
+          <p>「攻守で走り続ける」。高い運動量と意思決定スピードを軸に、チーム全員がアグレッシブなバスケを志向します。</p>
+        </div>
+        <div class="grid__item">
+          <h3>PROGRAM</h3>
+          <p>週 2 回のチーム練習、パフォーマンスケア、映像セッションを一体化。社会人も参加しやすい時間割を組んでいます。</p>
+        </div>
+        <div class="grid__item">
+          <h3>SUPPORT</h3>
+          <p>学生スタッフがデータ解析・SNS 運用を担当。コート外での挑戦も歓迎し、キャリア形成を後押しします。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="section__header">
+        <p class="section__eyebrow">CONTACT</p>
+        <h2>お問い合わせ・参加希望</h2>
+        <p>練習参加、スポンサー・コラボなどお気軽にご連絡ください。</p>
+      </div>
+      <form class="contact" name="contact" netlify>
+        <label>
+          お名前
+          <input type="text" name="name" placeholder="山田 太郎" required>
+        </label>
+        <label>
+          メールアドレス
+          <input type="email" name="email" placeholder="example@example.com" required>
+        </label>
+        <label>
+          お問い合わせ内容
+          <textarea name="message" rows="4" placeholder="参加希望、練習見学、スポンサー相談など" required></textarea>
+        </label>
+        <button type="submit" class="btn btn--primary">送信する</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Rampon Basketball Project</p>
+    <p class="footer__note">最新情報は SNS (@rampon_basketball) でも発信しています。</p>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
