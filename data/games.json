@@ -1,14 +1,14 @@
 [
   {
     "date": "2025-01-12",
-    "competition": "Tokyo Metro League",
-    "round": "Regular Week 5",
-    "opponent": "Tokyo Edge",
+    "competition": "秋季トーナメント",
+    "round": "1回戦",
+    "opponent": "東京理科大学",
     "score_for": 82,
     "score_against": 75,
     "venue": "Toyosu Arena",
-    "slug": "2025-01-12-tokyo-edge",
-    "recap": "4Qで10-0のランを作り逆転勝利。オフェンスリバウンドが勝負を決めた。",
+    "slug": "a",
+    "recap": "序盤はシュートが中々入らずに苦戦したものの、4Qで10-0のランを作り逆転勝利。オフェンスリバウンドが勝負を決めた。",
     "media": {
       "highlight_url": "https://youtu.be/sample-highlight1",
       "photos_url": "https://example.com/gallery/tokyo-edge"
