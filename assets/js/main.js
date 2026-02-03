@@ -1,3 +1,5 @@
+const HOME_TEAM_NAME = 'Keio Basketball Tech';
+
 const DataStore = (() => {
   const cache = {};
   async function fetchJSON(path) {
@@ -57,10 +59,20 @@ function createGameCard(game) {
   const badge = isWin ? '<span class="badge-win">WIN</span>' : '<span class="badge-lose">LOSE</span>';
   article.className = 'game-card';
   article.innerHTML = `
-    <p class="muted">${game.date}｜${game.competition}</p>
-    <h3>${game.opponent}</h3>
+    <p class="muted">${game.date}｜${game.competition} ${game.round}</p>
+    <h3>${HOME_TEAM_NAME} vs ${game.opponent}</h3>
     <div class="game-result">
-      <strong>${game.score_for} - ${game.score_against}</strong>
+      <div class="game-score">
+        <div class="game-team game-team--home">
+          <span class="game-team__name">${HOME_TEAM_NAME}</span>
+          <span class="game-team__score">${game.score_for}</span>
+        </div>
+        <span class="result-divider">-</span>
+        <div class="game-team">
+          <span class="game-team__name">${game.opponent}</span>
+          <span class="game-team__score">${game.score_against}</span>
+        </div>
+      </div>
       ${badge}
     </div>
     <p>${game.recap}</p>
@@ -150,9 +162,19 @@ async function renderGameDetail() {
   const game = games.find((g) => g.slug === slug) || games[0];
   detail.innerHTML = `
     <p>${game.date}｜${game.competition} ${game.round}</p>
-    <h2>${game.opponent}</h2>
+    <h2>${game.opponent} 戦</h2>
     <div class="game-result">
-      <strong>${game.score_for} - ${game.score_against}</strong>
+      <div class="game-score">
+        <div class="game-team game-team--home">
+          <span class="game-team__name">${HOME_TEAM_NAME}</span>
+          <span class="game-team__score">${game.score_for}</span>
+        </div>
+        <span class="result-divider">-</span>
+        <div class="game-team">
+          <span class="game-team__name">${game.opponent}</span>
+          <span class="game-team__score">${game.score_against}</span>
+        </div>
+      </div>
       <span class="${game.score_for > game.score_against ? 'badge-win' : 'badge-lose'}">
         ${game.score_for > game.score_against ? 'WIN' : 'LOSE'}
       </span>

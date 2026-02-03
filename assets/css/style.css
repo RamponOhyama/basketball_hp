@@ -225,9 +225,40 @@ header.site-header {
   gap: 1rem;
 }
 
-.game-result strong {
-  font-size: 1.4rem;
+.game-score {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.game-team {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.game-team__name {
+  font-size: 0.85rem;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.game-team--home .game-team__name {
+  color: #fff;
+  font-weight: 600;
+}
+
+.game-team__score {
+  font-size: 2rem;
+  font-weight: 700;
   font-family: var(--font-heading);
+}
+
+.result-divider {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--muted);
 }
 
 .table-scroll {
@@ -368,5 +399,20 @@ footer.site-footer {
 
   table {
     min-width: 600px;
+  }
+
+  .game-result {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .game-score {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .game-team__score {
+    font-size: 1.6rem;
   }
 }

@@ -6,9 +6,9 @@
     "opponent": "東京理科大学",
     "score_for": 82,
     "score_against": 75,
-    "venue": "Toyosu Arena",
+    "venue": "とどろきアリーナ",
     "slug": "a",
-    "recap": "序盤はシュートが中々入らずに苦戦したものの、4Qで10-0のランを作り逆転勝利。オフェンスリバウンドが勝負を決めた。",
+    "recap": "序盤はシュートが中々入らず苦戦するも、4Qで10-0のランを作り逆転勝利。オフェンスリバウンドが勝負を分けました。",
     "media": {
       "highlight_url": "https://youtu.be/sample-highlight1",
       "photos_url": "https://example.com/gallery/tokyo-edge"
@@ -16,54 +16,52 @@
   },
   {
     "date": "2025-01-05",
-    "competition": "Shibuya Cup",
-    "round": "Quarterfinal",
-    "opponent": "Shibuya Rookies",
-    "score_for": 68,
-    "score_against": 72,
-    "venue": "Shibuya Sports Center",
-    "slug": "2025-01-05-shibuya",
-    "recap": "終盤のターンオーバーで惜敗も、守備で得た収穫を次戦に活かす。",
-    "media": {
-      "highlight_url": "https://youtu.be/sample-highlight2"
-    }
+    "competition": "秋季トーナメント",
+    "round": "準々決勝",
+    "opponent": "早稲田大学",
+    "score_for": 76,
+    "score_against": 70,
+    "venue": "代々木第二体育館",
+    "slug": "2025-01-05-waseda",
+    "recap": "序盤から2-3ゾーンに苦しむも、後半はアウトサイドが当たり逆転に成功。",
+    "media": {}
   },
   {
     "date": "2024-12-18",
-    "competition": "Kanto Winter Challenge",
-    "round": "Semifinal",
-    "opponent": "Chiba Bay Students",
+    "competition": "冬季チャレンジカップ",
+    "round": "準決勝",
+    "opponent": "中央大学",
     "score_for": 75,
     "score_against": 63,
-    "venue": "Kashiwa Gym",
-    "slug": "2024-12-18-chiba",
-    "recap": "3Pが高確率で決まり、セカンドユニットも躍動。",
+    "venue": "柏市中央体育館",
+    "slug": "2024-12-18-chuo",
+    "recap": "3Pが高確率で決まり、セカンドユニットも躍動。終始リードを保ちました。",
     "media": {
       "photos_url": "https://example.com/gallery/chiba"
     }
   },
   {
     "date": "2024-11-30",
-    "competition": "Yokohama Friendly",
-    "round": "Exhibition",
-    "opponent": "Yokohama Rise",
+    "competition": "関東大学セレクションマッチ",
+    "round": "交流試合",
+    "opponent": "明治大学",
     "score_for": 90,
     "score_against": 74,
-    "venue": "Yokohama Arena Annex",
-    "slug": "2024-11-30-yokohama",
-    "recap": "速攻がさえわたり、全員得点で快勝。",
+    "venue": "横浜アリーナアネックス",
+    "slug": "2024-11-30-meiji",
+    "recap": "速攻が冴えわたり全員得点で快勝。リバウンドでも主導権を握りました。",
     "media": {}
   },
   {
     "date": "2024-10-15",
-    "competition": "Autumn University Cup",
-    "round": "Group Stage",
-    "opponent": "Saitama United",
+    "competition": "秋季大学リーグ",
+    "round": "第4節",
+    "opponent": "青山学院大学",
     "score_for": 71,
     "score_against": 69,
-    "venue": "Saitama Civic Gym",
-    "slug": "2024-10-15-saitama",
-    "recap": "残り30秒で決勝点を決め、接戦をものにした。",
+    "venue": "さいたま市民体育館",
+    "slug": "2024-10-15-aogaku",
+    "recap": "残り30秒で逆転弾。最後はディフェンスリバウンドで守り切りました。",
     "media": {}
   }
 ]
