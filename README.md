@@ -11,7 +11,7 @@
 - `faq.html`, `contact.html`
 - `assets/css/style.css` 共通デザイン
 - `assets/js/main.js` ナビゲーション・データ描画
-- `data/games.json`, `data/news.json` 更新用データ
+- `data/games.json`, `data/news.json`, `data/upcoming.json` 更新用データ
 
 ## データの更新方法
 ### 試合結果
@@ -52,6 +52,21 @@
    ```
 3. `slug` は `news-article.html?slug=` のURLになります。
 4. 追加後 `git push` で Home と `news.html` に自動反映。
+
+### 次戦（Upcoming Match）
+1. `data/upcoming.json` の配列に、最も近い試合の日付が先頭になるよう追記します。
+2. フィールド:
+   ```json
+   {
+     "date": "2025-02-10",
+     "time": "15:00",
+     "competition": "春季リーグ 第2節",
+     "opponent": "〇〇大学",
+     "venue": "会場名",
+     "note": "チケット・配信情報など任意"
+   }
+   ```
+3. Home の「NEXT GAME」カードはこの JSON の先頭要素を参照します。古い試合は配列末尾から削除してください。
 
 ## ローカル確認
 静的サイトなので以下で動作確認できます。

@@ -18,8 +18,28 @@ const DataStore = (() => {
     const news = await fetchJSON('data/news.json');
     return news.sort((a, b) => new Date(b.date) - new Date(a.date));
   }
-  return { getGames, getNews };
+  async function getUpcoming() {
+    try {
+      const upcoming = await fetchJSON('data/upcoming.json');
+      return upcoming
+        .slice()
+        .sort((a, b) => new Date(a.date) - new Date(b.date));
+    } catch (error) {
+      console.warn('No upcoming data', error);
+      return [];
+    }
+  }
+  return { getGames, getNews, getUpcoming };
 })();
+
+function formatDateLabel(dateStr) {
+  if (!dateStr) return '';
+  const d = new Date(dateStr);
+  if (Number.isNaN(d)) return dateStr;
+  const month = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${d.getFullYear()}.${month}.${day}`;
+}
 
 function initNav() {
   const toggle = document.querySelector('.nav-toggle');
@@ -93,6 +113,59 @@ async function renderLatestGames(limit = 3) {
   if (!container) return;
   const games = await DataStore.getGames();
   games.slice(0, limit).forEach((game) => container.appendChild(createGameCard(game)));
+}
+
+async function renderMatchHighlights() {
+  const nextContainer = document.getElementById('next-match');
+  const lastContainer = document.getElementById('last-result');
+  if (!nextContainer && !lastContainer) return;
+  const [games, upcoming] = await Promise.all([
+    DataStore.getGames(),
+    DataStore.getUpcoming(),
+  ]);
+
+  if (nextContainer) {
+    if (upcoming.length) {
+      const next = upcoming[0];
+      nextContainer.innerHTML = `
+        <p class="match-card__title">NEXT GAME</p>
+        <p class="match-card__teams">${HOME_TEAM_NAME}<br>VS ${next.opponent}</p>
+        <p class="match-card__meta">${formatDateLabel(next.date)} ${next.time || ''}</p>
+        <p class="match-card__meta">${next.competition}</p>
+        <p class="match-card__meta">${next.venue}</p>
+        ${next.note ? `<p class="match-card__note">${next.note}</p>` : ''}
+        <a class="btn btn-ghost" href="schedule.html">スケジュールへ</a>
+      `;
+    } else {
+      nextContainer.innerHTML = '<p>現在予定されている試合はありません。</p>';
+    }
+  }
+
+  if (lastContainer) {
+    const last = games[0];
+    if (!last) {
+      lastContainer.innerHTML = '<p>試合結果のデータがありません。</p>';
+      return;
+    }
+    lastContainer.innerHTML = `
+      <p class="match-card__title">LAST RESULT</p>
+      <p class="match-card__meta">${formatDateLabel(last.date)}｜${last.competition} ${last.round}</p>
+      <div class="match-scoreboard">
+        <div>
+          <span class="match-card__meta">${HOME_TEAM_NAME}</span>
+          <strong>${last.score_for}</strong>
+        </div>
+        <span class="result-divider">-</span>
+        <div>
+          <span class="match-card__meta">${last.opponent}</span>
+          <strong>${last.score_against}</strong>
+        </div>
+      </div>
+      <p>${last.recap}</p>
+      <p class="match-card__note">${last.venue}</p>
+      <a class="btn btn-ghost" href="game.html?slug=${last.slug}">試合レポート</a>
+    `;
+  }
 }
 
 async function renderGamesTable() {
@@ -235,7 +308,7 @@ async function initPage() {
   const page = document.body.dataset.page;
   switch (page) {
     case 'home':
-      await Promise.all([renderLatestNews(), renderLatestGames()]);
+      await Promise.all([renderLatestNews(), renderLatestGames(), renderMatchHighlights()]);
       break;
     case 'games':
       await renderGamesTable();

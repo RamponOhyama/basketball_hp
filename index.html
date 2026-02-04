@@ -24,15 +24,33 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="wrapper">
+  <section class="hero hero--feature">
+    <div class="wrapper hero__layout">
       <div class="hero-text">
-        <p class="hero-eyebrow">慶應理工学部體育會バスケットボール部</p>
-        <h1>遊びと本気の両立。<br>課外活動の新しい形。</h1>
-        <p>慶應理工学部體育會バスケットボール部（Keio Basketball Tech）は、年に3回開催される大会優勝を目標にして練習に取り組んでいる歴史ある団体です。</p>
+        <p class="hero-eyebrow">KEIO BASKETBALL TECH</p>
+        <h1>One Team. One Tech.</h1>
+        <p>慶應理工学部體育會バスケットボール部は「走る・考える・伝える」を合言葉に、リーグ戦・地域交流・テクノロジー活用を三位一体で推進しています。</p>
+        <div class="hero-badges">
+          <span>82nd SEASON</span>
+          <span>UNIV. ELITE LEAGUE</span>
+        </div>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="schedule.html">練習/試合スケジュール</a>
-          <a class="btn btn-ghost" href="contact.html">見学・入部相談</a>
+          <a class="btn btn-primary" href="games.html">Game & Result</a>
+          <a class="btn btn-ghost" href="team.html">About the Team</a>
+        </div>
+      </div>
+      <div class="hero-metrics">
+        <div>
+          <p class="metric-label">2024 Record</p>
+          <strong>12 - 4</strong>
+        </div>
+        <div>
+          <p class="metric-label">Championships</p>
+          <strong>3</strong>
+        </div>
+        <div>
+          <p class="metric-label">Members</p>
+          <strong>46</strong>
         </div>
       </div>
     </div>
@@ -40,37 +58,108 @@
 
   <main>
     <div class="wrapper">
-      <section class="section">
+      <section class="section match-section">
         <div class="section-header">
-          <p class="section-eyebrow">RESULT</p>
-          <h2>直近の試合結果</h2>
-          <p>詳細はタブをクリック</p>
+          <p class="section-eyebrow">MATCH INFO</p>
+          <h2>次戦と前戦</h2>
+          <p>リーグ公式戦・交流戦の最新情報をお届けします。</p>
         </div>
-        <div id="latest-games" class="games-list"></div>
-        <p><a href="games.html">全試合結果をみる →</a></p>
+        <div class="match-grid">
+          <article id="next-match" class="match-card match-card--next">
+            <p>次戦情報を読み込み中...</p>
+          </article>
+          <article id="last-result" class="match-card match-card--result">
+            <p>直近の結果を読み込み中...</p>
+          </article>
+        </div>
       </section>
 
       <section class="section">
         <div class="section-header">
           <p class="section-eyebrow">NEWS</p>
-          <h2>ニュース</h2>
-          <p>試合結果や合宿報告、練習の様子などを随時更新しています。</p>
+          <h2>ニュース / トピックス</h2>
+          <p>試合結果やイベント、地域連携まで。最新3件をピックアップしています。</p>
         </div>
         <div id="latest-news" class="news-list"></div>
         <p><a href="news.html">ニュース一覧へ →</a></p>
       </section>
 
+      <section class="section" id="results">
+        <div class="section-header">
+          <p class="section-eyebrow">RESULT</p>
+          <h2>最新の試合結果</h2>
+          <p>大学対決のスコアとハイライトを随時更新中。</p>
+        </div>
+        <div id="latest-games" class="games-list"></div>
+        <p><a href="games.html">全試合結果を見る →</a></p>
+      </section>
+
+      <section class="section story">
+        <div class="section-header">
+          <p class="section-eyebrow">ABOUT</p>
+          <h2>KEIO Style</h2>
+        </div>
+        <div class="story-grid">
+          <article>
+            <h3>PHILOSOPHY</h3>
+            <p>スピードと判断力を磨く「走るバスケ」、映像×データで振り返る「考えるバスケ」、地域・OBとも連携する「伝えるバスケ」。3本柱でチームを強化しています。</p>
+          </article>
+          <article>
+            <h3>PROGRAM</h3>
+            <ul>
+              <li>週2回のチーム練習 + 映像セッション</li>
+              <li>データ班によるショットチャート・トラッキング</li>
+              <li>地域クリニック / 合宿 / マリン合宿</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <p class="section-eyebrow">GALLERY</p>
+          <h2>GAME & COMMUNITY</h2>
+        </div>
+        <div class="gallery-grid">
+          <figure>
+            <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=800&q=80" alt="試合の様子">
+            <figcaption>秋季トーナメント 第1回戦</figcaption>
+          </figure>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=800&q=80" alt="練習風景">
+            <figcaption>映像セッションと練習</figcaption>
+          </figure>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1505663912202-ac22d1c1eb81?auto=format&fit=crop&w=800&q=80" alt="地域イベント">
+            <figcaption>地域クリニック</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section panel">
+        <div class="section-header">
+          <p class="section-eyebrow">PARTNERS</p>
+          <h2>サポート企業 / 協賛</h2>
+        </div>
+        <div class="sponsor-grid">
+          <span>Keio Tech Lab</span>
+          <span>Future Play Inc.</span>
+          <span>Yokohama Sports Clinic</span>
+          <span>港区コミュニティ財団</span>
+        </div>
+      </section>
+
       <section class="section panel">
         <div class="section-header">
           <p class="section-eyebrow">FOLLOW US</p>
-          <h2>SNS</h2>
-          <p>最新情報は SNS で配信しています。フォローしてチームの様子をチェック。</p>
+          <h2>SNS / CONTACT</h2>
         </div>
         <div class="sns-links">
           <a href="https://x.com/rampon_basketball" target="_blank" rel="noopener">X (旧Twitter)</a>
           <a href="https://instagram.com/rampon_basketball" target="_blank" rel="noopener">Instagram</a>
           <a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a>
         </div>
+        <p style="margin-top:1rem;">お問い合わせは <a href="contact.html">Contact</a> から。</p>
       </section>
     </div>
   </main>
